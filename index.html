@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rakesh Kumar — AI/ML Engineer</title>
+<meta name="description" content="Rakesh Kumar — AI/ML Engineer specializing in LLM systems, agentic pipelines, and production-grade machine learning. M.Tech AI/ML, VIT Vellore.">
+<meta property="og:title" content="Rakesh Kumar — AI/ML Engineer">
+<meta property="og:description" content="AI/ML Engineer specializing in LLM systems, agentic pipelines, and production-grade machine learning.">
+<meta property="og:image" content="professional_image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rakesh Kumar — AI/ML Engineer">
+<meta name="twitter:description" content="AI/ML Engineer specializing in LLM systems, agentic pipelines, and production-grade machine learning.">
+<meta name="twitter:image" content="professional_image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -318,6 +327,13 @@ nav a:hover::after{width:100%;}
   border-radius:6px;font-family:var(--mono);font-weight:600;
   border:1px solid rgba(74,158,255,.2);
 }
+.proj-links{display:flex;gap:16px;margin-top:14px;position:relative;z-index:1;}
+.proj-links a{
+  font-size:12px;font-weight:600;color:var(--text);
+  display:inline-flex;align-items:center;gap:5px;
+  border-bottom:1px solid transparent;transition:border-color .25s,color .25s;
+}
+.proj-links a:hover{color:var(--blue);border-color:var(--blue);}
 
 /* ── EXPERIENCE ── */
 .exp-list{display:flex;flex-direction:column;gap:24px;}
@@ -432,12 +448,13 @@ footer{
 
     <h1>Rakesh<span class="line2">Kumar</span></h1>
 
-    <p class="hero-sub">AI/ML Engineer building intelligent systems — LLMs, Agentic AI &amp; enterprise ML.</p>
+    <p class="hero-sub">AI/ML Engineer specializing in LLM systems, agentic pipelines, and production-grade machine learning.</p>
     <div class="typing-line" id="typing"></div>
 
     <div class="hero-btns">
       <a href="mailto:rakeshofficial7317@gmail.com" class="btn btn-fill">✉ Get In Touch</a>
       <button class="btn btn-outline" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects ↓</button>
+      <a href="resume.pdf" download class="btn btn-outline">⬇ Resume</a>
     </div>
   </div>
 </div>
@@ -449,9 +466,8 @@ footer{
   <h2 class="sec-title">Who I Am</h2>
   <div class="about-grid">
     <div class="about-text">
-      <p>I'm an <strong>M.Tech in AI & ML student at VIT Vellore</strong> with a strong foundation from my B.Tech at KIET. I specialize in building production-ready AI/ML systems with expertise in <strong>Large Language Models, Agentic AI, and enterprise solutions</strong>.</p>
-      <p>My work spans the complete ML lifecycle — from designing RAG pipelines and fine-tuning LLMs to architecting scalable cloud deployments. I'm passionate about creating intelligent systems that solve real-world problems at scale.</p>
-      <p>With hands-on experience in Python, PyTorch, TensorFlow, and cloud platforms (AWS), I build solutions that combine cutting-edge AI research with production-grade engineering practices.</p>
+      <p>AI/ML Engineer pursuing an M.Tech in AI &amp; ML at VIT Vellore, with a B.Tech in Computer Science from KIET. I specialize in building production-grade LLM systems — from agentic RAG pipelines to fine-tuned models deployed at scale — backed by hands-on experience in cloud infrastructure, distributed systems, and MLOps.</p>
+      <p>I care about closing the gap between research and production: writing systems that are accurate, reliable, and built to scale.</p>
     </div>
     <div class="hl-cards">
       <div class="hl-card">
@@ -569,26 +585,38 @@ footer{
   <div class="proj-grid" id="pgrid">
     <div class="proj-card" data-cat="rag" data-tags="multimodal agentic rag corrective hitl">
       <h3>Multimodal Agentic RAG System</h3>
-      <p>Built an advanced RAG chatbot using LangGraph with corrective retrieval loops and human-in-the-loop approval workflows. Integrated multimodal ingestion (PDF, images, audio/video) with FAISS vector store.</p>
+      <p>Designed a production-grade RAG system using LangGraph, with corrective retrieval loops and human-in-the-loop approval for high-stakes queries. Supports multimodal ingestion — PDFs, images, audio, and video — backed by a FAISS vector store for fast, accurate retrieval.</p>
       <div class="proj-tags">
         <span class="ptag">LangGraph</span><span class="ptag">RAG</span>
         <span class="ptag">Multimodal</span><span class="ptag">HITL</span>
       </div>
+      <div class="proj-links">
+        <a href="#" target="_blank">↗ View Code</a>
+        <a href="#" target="_blank">↗ Live Demo</a>
+      </div>
     </div>
     <div class="proj-card" data-cat="cloud" data-tags="distributed fargate ecs kafka clickhouse">
       <h3>Distributed Cloud Deployment Platform</h3>
-      <p>Architected a scalable platform with Kafka + ClickHouse + PostgreSQL. Isolated ECS Fargate containers per build with durable log persistence and 5-module microservices with real-time streaming.</p>
+      <p>Architected a distributed deployment platform for isolated build environments at scale, using AWS ECS Fargate, Kafka, and ClickHouse. A 5-module microservices architecture with real-time log streaming keeps pipelines observable and fault-tolerant.</p>
       <div class="proj-tags">
         <span class="ptag">AWS ECS</span><span class="ptag">Kafka</span>
         <span class="ptag">ClickHouse</span><span class="ptag">Microservices</span>
       </div>
+      <div class="proj-links">
+        <a href="#" target="_blank">↗ View Code</a>
+        <a href="#" target="_blank">↗ Live Demo</a>
+      </div>
     </div>
     <div class="proj-card" data-cat="ml" data-tags="phishing url detection deeplearning ensemble">
       <h3>Hybrid Phishing URL Detection</h3>
-      <p>Ensemble model combining DeepTCN + Attention, SGD Classifier, and Isolation Forest. Achieved 96%+ accuracy on 555K+ URLs with real-time concept drift monitoring and active learning integration.</p>
+      <p>Built an ensemble detection system (DeepTCN + Attention, SGD Classifier, Isolation Forest) achieving 96%+ accuracy across 555K+ URLs, with active learning and concept-drift monitoring to stay current as attack patterns evolve.</p>
       <div class="proj-tags">
         <span class="ptag">PyTorch</span><span class="ptag">Ensemble</span>
         <span class="ptag">Concept Drift</span><span class="ptag">Security</span>
+      </div>
+      <div class="proj-links">
+        <a href="#" target="_blank">↗ View Code</a>
+        <a href="#" target="_blank">↗ Live Demo</a>
       </div>
     </div>
   </div>
@@ -645,7 +673,7 @@ footer{
     <a href="mailto:rakeshofficial7317@gmail.com">Email</a>
     <a href="tel:+917355066278">+91 7355066278</a>
   </div>
-  <p>&copy; 2024 Rakesh Kumar. Built with precision.</p>
+  <p>&copy; 2026 Rakesh Kumar. Designed &amp; built by Rakesh Kumar.</p>
 </footer>
 
 <div class="btt" id="btt">
