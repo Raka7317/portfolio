@@ -73,19 +73,12 @@ body {
 .section-anchor { scroll-margin-top: 110px; }
 .photo-frame {
   position: relative;
-  border-radius: 36px;
-  padding: 10px;
-  background: linear-gradient(160deg, rgba(99,102,241,0.45), rgba(255,255,255,0.04) 40%, rgba(168,85,247,0.35));
-  box-shadow: 0 30px 80px -20px rgba(99,102,241,0.35);
 }
-.dark .photo-frame { background: linear-gradient(160deg, rgba(99,102,241,0.4), rgba(255,255,255,0.04) 40%, rgba(168,85,247,0.3)); }
 .photo-frame-inner {
-  border-radius: 28px;
-  overflow: hidden;
   aspect-ratio: 1 / 1;
-  background: #0F1112;
 }
-.photo-frame-inner img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; filter: grayscale(0.08) contrast(1.03); }
+.photo-frame-inner img { width: 100%; height: 100%; object-fit: cover; object-position: center center; filter: contrast(1.02); mix-blend-mode: normal; }
+.dark .photo-frame-inner img { filter: contrast(1.05) brightness(0.98); }
 </style>
 </head>
 <body class="bg-[#FAFAFA] dark:bg-dark text-neutral-900 dark:text-[#EAEAEA] min-h-screen relative overflow-x-hidden transition-colors duration-700">
@@ -176,7 +169,7 @@ body {
       <div class="lg:col-span-2 opacity-0 animate-slide-up" style="animation-delay:150ms">
         <div class="photo-frame max-w-md mx-auto">
           <div class="photo-frame-inner">
-            <img src="profile_image.png" alt="Rakesh Kumar">
+            <img src="professional_image.png" alt="Rakesh Kumar">
           </div>
         </div>
         <div class="flex justify-center mt-5">
