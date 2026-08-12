@@ -73,13 +73,14 @@ body {
 .section-anchor { scroll-margin-top: 110px; }
 .photo-frame {
   position: relative;
-  border-radius: 28px;
-  padding: 6px;
-  background: linear-gradient(160deg, rgba(99,102,241,0.35), rgba(255,255,255,0.03) 40%, rgba(168,85,247,0.25));
+  border-radius: 36px;
+  padding: 10px;
+  background: linear-gradient(160deg, rgba(99,102,241,0.45), rgba(255,255,255,0.04) 40%, rgba(168,85,247,0.35));
+  box-shadow: 0 30px 80px -20px rgba(99,102,241,0.35);
 }
 .dark .photo-frame { background: linear-gradient(160deg, rgba(99,102,241,0.4), rgba(255,255,255,0.04) 40%, rgba(168,85,247,0.3)); }
 .photo-frame-inner {
-  border-radius: 24px;
+  border-radius: 28px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
   background: #0F1112;
@@ -96,90 +97,90 @@ body {
 
 <!-- NAV -->
 <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-40 w-full max-w-[95vw] px-2">
-  <div class="glass-panel rounded-full px-1.5 py-1.5 flex items-center gap-1 shadow-lg shadow-black/5 dark:shadow-black/20 mx-auto w-fit overflow-x-auto">
+  <div class="glass-panel rounded-full px-2 py-2 flex items-center gap-1 shadow-xl shadow-black/5 dark:shadow-black/30 mx-auto w-fit overflow-x-auto">
     <a href="#home" class="pl-3 pr-4 flex items-center gap-2 cursor-pointer border-r border-black/5 dark:border-white/10 mr-1 shrink-0">
       <div class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></div>
-      <span class="text-xs font-semibold tracking-tight">RK.AI</span>
+      <span class="text-sm font-semibold tracking-tight">RK.AI</span>
     </a>
-    <a href="#home" class="nav-link px-3 md:px-4 py-2 text-[11px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="home">Index</a>
-    <a href="#about" class="nav-link px-3 md:px-4 py-2 text-[11px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="about">About</a>
-    <a href="#skills" class="nav-link px-3 md:px-4 py-2 text-[11px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="skills">Stack</a>
-    <a href="#projects" class="nav-link px-3 md:px-4 py-2 text-[11px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="projects">Work</a>
-    <a href="#experience" class="nav-link px-3 md:px-4 py-2 text-[11px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="experience">Journey</a>
-    <a href="#contact" class="nav-link px-3 md:px-4 py-2 text-[11px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="contact">Contact</a>
+    <a href="#home" class="nav-link px-4 md:px-5 py-2.5 text-[13px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="home">Index</a>
+    <a href="#about" class="nav-link px-4 md:px-5 py-2.5 text-[13px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="about">About</a>
+    <a href="#skills" class="nav-link px-4 md:px-5 py-2.5 text-[13px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="skills">Stack</a>
+    <a href="#projects" class="nav-link px-4 md:px-5 py-2.5 text-[13px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="projects">Work</a>
+    <a href="#experience" class="nav-link px-4 md:px-5 py-2.5 text-[13px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="experience">Journey</a>
+    <a href="#contact" class="nav-link px-4 md:px-5 py-2.5 text-[13px] font-medium text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full hover:bg-black/5 dark:hover:bg-white/5 shrink-0" data-target="contact">Contact</a>
     <div class="w-px h-4 bg-black/5 dark:bg-white/10 mx-1 shrink-0"></div>
-    <button onclick="toggleTheme()" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-neutral-500 dark:text-neutral-400 shrink-0">
-      <iconify-icon id="theme-icon" icon="lucide:sun" width="14"></iconify-icon>
+    <button onclick="toggleTheme()" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-neutral-500 dark:text-neutral-400 shrink-0">
+      <iconify-icon id="theme-icon" icon="lucide:sun" width="16"></iconify-icon>
     </button>
   </div>
 </nav>
 
-<main class="relative z-10 pt-32 pb-20 max-w-5xl mx-auto px-6">
+<main class="relative z-10 pt-40 pb-24 max-w-6xl mx-auto px-6 md:px-10">
 
   <!-- HOME / HERO -->
   <section id="home" class="section-anchor min-h-[80vh] flex items-center py-16">
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-14 items-center w-full">
       <div class="lg:col-span-3">
         <div class="w-fit mb-8 opacity-0 animate-slide-up">
-          <div class="px-3 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/5 backdrop-blur-md flex items-center gap-2">
+          <div class="px-4 py-1.5 rounded-full border border-indigo-500/20 bg-indigo-500/5 backdrop-blur-md flex items-center gap-2">
             <span class="relative flex h-1.5 w-1.5">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-indigo-500"></span>
             </span>
-            <span class="text-[10px] font-medium text-indigo-600 dark:text-indigo-300 uppercase tracking-widest">Open to work</span>
+            <span class="text-xs font-medium text-indigo-600 dark:text-indigo-300 uppercase tracking-widest">Open to work</span>
           </div>
         </div>
 
-        <h1 class="text-5xl md:text-6xl font-semibold tracking-[-0.03em] leading-[0.98] text-neutral-900 dark:text-white mb-8 opacity-0 animate-slide-up" style="animation-delay:100ms">
+        <h1 class="text-6xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.03em] leading-[0.95] text-neutral-900 dark:text-white mb-10 opacity-0 animate-slide-up" style="animation-delay:100ms">
           I build AI systems <br>
           that <span class="bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 via-neutral-500 to-neutral-900 dark:from-white dark:via-neutral-400 dark:to-white bg-300% animate-shimmer">think &amp; retrieve.</span>
         </h1>
 
-        <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light max-w-xl leading-relaxed opacity-0 animate-slide-up" style="animation-delay:200ms">
+        <p class="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 font-light max-w-2xl leading-relaxed opacity-0 animate-slide-up" style="animation-delay:200ms">
           AI/ML Engineer pursuing an <span class="text-neutral-900 dark:text-white font-medium">M.Tech in AI &amp; ML at VIT Vellore</span>. I build agentic RAG pipelines, fine-tune LLMs, and ship the <span class="text-neutral-900 dark:text-white font-medium">cloud infrastructure and MLOps</span> that keep them alive in production.
         </p>
 
         <div class="flex flex-wrap items-center gap-4 mt-10 opacity-0 animate-slide-up" style="animation-delay:300ms">
-          <a href="#projects" class="group relative px-6 py-3 bg-neutral-900 dark:bg-[#EDEDED] text-white dark:text-black text-xs font-semibold rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(99,102,241,0.3)]">
+          <a href="#projects" class="group relative px-8 py-4 bg-neutral-900 dark:bg-[#EDEDED] text-white dark:text-black text-sm font-semibold rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_24px_rgba(99,102,241,0.35)]">
             <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
             <span class="relative z-10 flex items-center gap-2">View Case Studies <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon></span>
           </a>
-          <a href="mailto:rakeshofficial7317@gmail.com" class="px-6 py-3 text-neutral-600 dark:text-neutral-400 text-xs font-medium hover:text-black dark:hover:text-white transition-colors flex items-center gap-2 rounded-full border border-black/5 dark:border-white/10 hover:border-indigo-500/40">
+          <a href="mailto:rakeshofficial7317@gmail.com" class="px-8 py-4 text-neutral-600 dark:text-neutral-400 text-sm font-medium hover:text-black dark:hover:text-white transition-colors flex items-center gap-2 rounded-full border border-black/5 dark:border-white/10 hover:border-indigo-500/40">
             <iconify-icon icon="lucide:mail" width="16"></iconify-icon> Book a Call
           </a>
-          <a href="https://github.com/Raka7317" target="_blank" class="px-6 py-3 text-neutral-600 dark:text-neutral-400 text-xs font-medium hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
+          <a href="https://github.com/Raka7317" target="_blank" class="px-8 py-4 text-neutral-600 dark:text-neutral-400 text-sm font-medium hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
             <iconify-icon icon="lucide:github" width="16"></iconify-icon> GitHub
           </a>
         </div>
 
         <div class="mt-20 pt-8 border-t border-black/5 dark:border-white/5 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0 animate-fade-in" style="animation-delay:500ms">
           <div>
-            <div class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">8.38</div>
-            <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">GPA · M.Tech AI/ML</div>
+            <div class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">8.38</div>
+            <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">GPA · M.Tech AI/ML</div>
           </div>
           <div>
-            <div class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">555K<span class="text-indigo-500">+</span></div>
-            <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">URLs Analyzed</div>
+            <div class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">555K<span class="text-indigo-500">+</span></div>
+            <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">URLs Analyzed</div>
           </div>
           <div>
-            <div class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">96<span class="text-indigo-500">%</span></div>
-            <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">Model Accuracy</div>
+            <div class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">96<span class="text-indigo-500">%</span></div>
+            <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">Model Accuracy</div>
           </div>
           <div>
-            <div class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">0.9932</div>
-            <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">Phishing Model AUC</div>
+            <div class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">0.9932</div>
+            <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">Phishing Model AUC</div>
           </div>
         </div>
       </div>
 
       <div class="lg:col-span-2 opacity-0 animate-slide-up" style="animation-delay:150ms">
-        <div class="photo-frame max-w-sm mx-auto">
+        <div class="photo-frame max-w-md mx-auto">
           <div class="photo-frame-inner">
-            <img src="professional_image.png" alt="Rakesh Kumar">
+            <img src="profile_image.png" alt="Rakesh Kumar">
           </div>
         </div>
         <div class="flex justify-center mt-5">
-          <div class="px-3 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/5 text-[10px] font-medium text-indigo-600 dark:text-indigo-300 uppercase tracking-widest">
+          <div class="px-4 py-1.5 rounded-full border border-indigo-500/20 bg-indigo-500/5 text-xs font-medium text-indigo-600 dark:text-indigo-300 uppercase tracking-widest">
             Rakesh Kumar · Vellore, IN
           </div>
         </div>
@@ -188,226 +189,226 @@ body {
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section-anchor py-24">
+  <section id="about" class="section-anchor py-32">
     <div class="mb-12 reveal">
-      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Who I Am</h2>
-      <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 max-w-md">Closing the gap between research and production.</p>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">Who I Am</h2>
+      <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-3 max-w-lg">Closing the gap between research and production.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-5 gap-10 reveal">
-      <div class="md:col-span-3 space-y-5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+      <div class="md:col-span-3 space-y-6 text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
         <p>AI/ML Engineer pursuing an <span class="text-neutral-900 dark:text-white font-medium">M.Tech in AI &amp; ML at VIT Vellore</span>, with a B.Tech in Computer Science from KIET. I specialize in building production-grade LLM systems — from agentic RAG pipelines to fine-tuned models deployed at scale — backed by hands-on experience in cloud infrastructure, distributed systems, and MLOps.</p>
         <p>I care about closing the gap between research and production: writing systems that are accurate, reliable, and built to scale from day one. I'm also extending into enterprise AI domains — LangSmith, the OpenAI API, prompt evaluation, and observability.</p>
         <div class="flex flex-wrap gap-2 pt-2">
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Vellore, IN</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">LLM Systems Focus</span>
-          <span class="text-[10px] uppercase tracking-wider border border-indigo-500/30 bg-indigo-500/5 px-3 py-1.5 rounded-full text-indigo-600 dark:text-indigo-300">Freelance / Full-time</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-4 py-2 rounded-full text-neutral-500">Vellore, IN</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-4 py-2 rounded-full text-neutral-500">LLM Systems Focus</span>
+          <span class="text-xs uppercase tracking-wider border border-indigo-500/30 bg-indigo-500/5 px-4 py-2 rounded-full text-indigo-600 dark:text-indigo-300">Freelance / Full-time</span>
         </div>
       </div>
       <div class="md:col-span-2 grid grid-cols-2 gap-3">
-        <div class="glass-card rounded-2xl p-5">
-          <div class="text-2xl font-semibold text-neutral-900 dark:text-white">8.38</div>
-          <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">GPA M.Tech AI/ML</div>
+        <div class="glass-card rounded-2xl p-7">
+          <div class="text-3xl md:text-4xl font-semibold text-neutral-900 dark:text-white">8.38</div>
+          <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">GPA M.Tech AI/ML</div>
         </div>
-        <div class="glass-card rounded-2xl p-5">
-          <div class="text-2xl font-semibold text-neutral-900 dark:text-white">555K+</div>
-          <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">URLs in Production</div>
+        <div class="glass-card rounded-2xl p-7">
+          <div class="text-3xl md:text-4xl font-semibold text-neutral-900 dark:text-white">555K+</div>
+          <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">URLs in Production</div>
         </div>
-        <div class="glass-card rounded-2xl p-5">
-          <div class="text-2xl font-semibold text-neutral-900 dark:text-white">96%+</div>
-          <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">Model Accuracy</div>
+        <div class="glass-card rounded-2xl p-7">
+          <div class="text-3xl md:text-4xl font-semibold text-neutral-900 dark:text-white">96%+</div>
+          <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">Model Accuracy</div>
         </div>
-        <div class="glass-card rounded-2xl p-5">
-          <div class="text-2xl font-semibold text-neutral-900 dark:text-white">0.9932</div>
-          <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-1">Phishing AUC</div>
+        <div class="glass-card rounded-2xl p-7">
+          <div class="text-3xl md:text-4xl font-semibold text-neutral-900 dark:text-white">0.9932</div>
+          <div class="text-xs text-neutral-500 uppercase tracking-widest mt-2">Phishing AUC</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section-anchor py-24">
+  <section id="skills" class="section-anchor py-32">
     <div class="mb-12 reveal">
-      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Technical Stack</h2>
-      <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2">Tools of the trade, by domain.</p>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">Technical Stack</h2>
+      <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-3">Tools of the trade, by domain.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 reveal">
-      <div class="glass-card rounded-2xl p-6">
-        <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">Languages</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">Languages</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Python</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">C++</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">SQL</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Python</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">C++</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">SQL</span>
         </div>
       </div>
-      <div class="glass-card rounded-2xl p-6">
-        <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">Developer Tools</h3>
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">Developer Tools</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">PostgreSQL</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">AWS</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">MongoDB</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">MySQL</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Kafka</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Redis</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Load Balancer</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Linux</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">PostgreSQL</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">AWS</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">MongoDB</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">MySQL</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Kafka</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Redis</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Load Balancer</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Linux</span>
         </div>
       </div>
-      <div class="glass-card rounded-2xl p-6">
-        <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">ML / Deep Learning</h3>
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">ML / Deep Learning</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">NumPy</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Pandas</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Scikit-learn</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">PyTorch</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">TensorFlow</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">CNNs</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">RNNs / LSTMs / GRU</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Transformers</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Transfer Learning</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Fine-tuning</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">GANs</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Object Detection (YOLO, Fast R-CNN)</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">NumPy</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Pandas</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Scikit-learn</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">PyTorch</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">TensorFlow</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">CNNs</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">RNNs / LSTMs / GRU</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Transformers</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Transfer Learning</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Fine-tuning</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">GANs</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Object Detection (YOLO, Fast R-CNN)</span>
         </div>
       </div>
-      <div class="glass-card rounded-2xl p-6">
-        <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">NLP / GenAI</h3>
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">NLP / GenAI</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Generative AI</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">NLP (NLG/NLU)</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">LangChain</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">LangGraph</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">RAG</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">FAISS</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Vector Search</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Embeddings</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Prompting</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Generative AI</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">NLP (NLG/NLU)</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">LangChain</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">LangGraph</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">RAG</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">FAISS</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Vector Search</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Embeddings</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Prompting</span>
         </div>
       </div>
-      <div class="glass-card rounded-2xl p-6">
-        <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">MLOps</h3>
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">MLOps</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Git / GitHub</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">DVC</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">MLflow</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">GitHub Actions (CI/CD)</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Docker</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Kubernetes</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Git / GitHub</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">DVC</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">MLflow</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">GitHub Actions (CI/CD)</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Docker</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Kubernetes</span>
         </div>
       </div>
-      <div class="glass-card rounded-2xl p-6">
-        <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">System Design</h3>
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">System Design</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Distributed Systems</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Load Balancing</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Caching</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">CDN</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">API Gateway</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Microservices</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Event-Driven Arch.</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Sharding</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">WebSockets</span>
-          <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">High Availability</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Distributed Systems</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Load Balancing</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Caching</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">CDN</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">API Gateway</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Microservices</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Event-Driven Arch.</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Sharding</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">WebSockets</span>
+          <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">High Availability</span>
         </div>
       </div>
     </div>
 
-    <div class="glass-card rounded-2xl p-6 mt-4 reveal">
-      <h3 class="text-xs font-mono text-indigo-500 mb-4 uppercase tracking-widest">CS Fundamentals</h3>
+    <div class="glass-card rounded-2xl p-8 mt-4 reveal">
+      <h3 class="text-sm font-mono text-indigo-500 mb-5 uppercase tracking-widest">CS Fundamentals</h3>
       <div class="flex flex-wrap gap-2">
-        <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Data Structures &amp; Algorithms</span>
-        <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">DBMS</span>
-        <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Operating Systems</span>
-        <span class="text-xs px-3 py-1.5 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">OOP</span>
+        <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Data Structures &amp; Algorithms</span>
+        <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">DBMS</span>
+        <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">Operating Systems</span>
+        <span class="text-sm px-4 py-2 rounded-full border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-300">OOP</span>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section-anchor py-24">
+  <section id="projects" class="section-anchor py-32">
     <div class="mb-8 reveal">
-      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Selected Works</h2>
-      <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 max-w-md">Production systems, ML pipelines, and infrastructure I've designed and shipped.</p>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">Selected Works</h2>
+      <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-3 max-w-lg">Production systems, ML pipelines, and infrastructure I've designed and shipped.</p>
     </div>
 
     <div class="flex flex-wrap gap-3 mb-8 items-center reveal">
-      <input id="psearch" type="text" placeholder="Search projects..." class="flex-1 min-w-[200px] px-4 py-2.5 text-xs rounded-full glass-panel outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-700 dark:text-neutral-300 placeholder:text-neutral-500">
+      <input id="psearch" type="text" placeholder="Search projects..." class="flex-1 min-w-[220px] px-5 py-3.5 text-sm rounded-full glass-panel outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-700 dark:text-neutral-300 placeholder:text-neutral-500">
       <div class="flex gap-2 flex-wrap">
-        <button class="chip-btn active px-4 py-2 text-[11px] font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="all">All</button>
-        <button class="chip-btn px-4 py-2 text-[11px] font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="rag">RAG</button>
-        <button class="chip-btn px-4 py-2 text-[11px] font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="cloud">Cloud</button>
-        <button class="chip-btn px-4 py-2 text-[11px] font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="ml">ML</button>
+        <button class="chip-btn active px-5 py-3 text-xs font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="all">All</button>
+        <button class="chip-btn px-5 py-3 text-xs font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="rag">RAG</button>
+        <button class="chip-btn px-5 py-3 text-xs font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="cloud">Cloud</button>
+        <button class="chip-btn px-5 py-3 text-xs font-medium rounded-full border border-black/5 dark:border-white/10 text-neutral-500" data-f="ml">ML</button>
       </div>
     </div>
 
-    <div id="pgrid" class="grid grid-cols-1 md:grid-cols-2 gap-4 reveal">
+    <div id="pgrid" class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
 
-      <div class="proj-card group glass-card rounded-3xl p-8 cursor-default" data-cat="rag" data-tags="multimodal agentic rag hybrid retrieval hierarchical memory langgraph opensearch">
+      <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="rag" data-tags="multimodal agentic rag hybrid retrieval hierarchical memory langgraph opensearch">
         <div class="flex items-start justify-between mb-4">
-          <iconify-icon icon="lucide:brain-circuit" width="30" class="text-indigo-500" stroke-width="1"></iconify-icon>
-          <a href="https://github.com/Raka7317/Multi_modal_Rag" target="_blank" class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
+          <iconify-icon icon="lucide:brain-circuit" width="36" class="text-indigo-500" stroke-width="1"></iconify-icon>
+          <a href="https://github.com/Raka7317/Multi_modal_Rag" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
             <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
           </a>
         </div>
-        <h3 class="text-lg font-medium text-neutral-900 dark:text-white mb-2">Enterprise Multimodal RAG System</h3>
-        <p class="text-sm text-neutral-500 leading-relaxed mb-4">Multimodal RAG supporting PDFs, images, audio, video, websites, YouTube, and source code using LangChain and LangGraph — Hybrid Retrieval (Dense + BM25), Cross-Encoder reranking, multimodal embeddings (BGE, ImageBind), and hierarchical memory via LangGraph SQLite Checkpointer + MongoDB. Deployed on AWS: FastAPI, Docker, S3, OpenSearch Vector Engine, ECS, ALB, CloudFront, Route53. Evaluated with Ragas.</p>
+        <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">Enterprise Multimodal RAG System</h3>
+        <p class="text-base text-neutral-500 leading-relaxed mb-5">Multimodal RAG supporting PDFs, images, audio, video, websites, YouTube, and source code using LangChain and LangGraph — Hybrid Retrieval (Dense + BM25), Cross-Encoder reranking, multimodal embeddings (BGE, ImageBind), and hierarchical memory via LangGraph SQLite Checkpointer + MongoDB. Deployed on AWS: FastAPI, Docker, S3, OpenSearch Vector Engine, ECS, ALB, CloudFront, Route53. Evaluated with Ragas.</p>
         <div class="flex flex-wrap gap-2">
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">LangGraph</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">Hybrid Retrieval</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">ImageBind</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">AWS ECS</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">LangGraph</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Hybrid Retrieval</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">ImageBind</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AWS ECS</span>
         </div>
       </div>
 
-      <div class="proj-card group glass-card rounded-3xl p-8 cursor-default" data-cat="cloud" data-tags="distributed fargate ecs kafka clickhouse prisma deployment platform">
+      <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="cloud" data-tags="distributed fargate ecs kafka clickhouse prisma deployment platform">
         <div class="flex items-start justify-between mb-4">
-          <iconify-icon icon="lucide:cloud-cog" width="30" class="text-emerald-500" stroke-width="1"></iconify-icon>
-          <a href="https://github.com/Raka7317/Vercel_Part_1" target="_blank" class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
+          <iconify-icon icon="lucide:cloud-cog" width="36" class="text-emerald-500" stroke-width="1"></iconify-icon>
+          <a href="https://github.com/Raka7317/Vercel_Part_1" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
             <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
           </a>
         </div>
-        <h3 class="text-lg font-medium text-neutral-900 dark:text-white mb-2">Distributed Cloud Deployment Platform</h3>
-        <p class="text-sm text-neutral-500 leading-relaxed mb-4">V1: scalable Git-to-deployment platform with isolated Docker builds on AWS ECS and S3 storage, using a custom streaming reverse proxy to serve deployments without memory overhead. V2: added PostgreSQL/Prisma for deployment data, migrated logging from Redis to a Kafka + ClickHouse pipeline for persistent, real-time build log ingestion.</p>
+        <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">Distributed Cloud Deployment Platform</h3>
+        <p class="text-base text-neutral-500 leading-relaxed mb-5">V1: scalable Git-to-deployment platform with isolated Docker builds on AWS ECS and S3 storage, using a custom streaming reverse proxy to serve deployments without memory overhead. V2: added PostgreSQL/Prisma for deployment data, migrated logging from Redis to a Kafka + ClickHouse pipeline for persistent, real-time build log ingestion.</p>
         <div class="flex flex-wrap gap-2">
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">AWS ECS Fargate</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">Kafka</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">ClickHouse</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">Next.js</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AWS ECS Fargate</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Kafka</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">ClickHouse</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Next.js</span>
         </div>
       </div>
 
-      <div class="proj-card group glass-card rounded-3xl p-8 cursor-default" data-cat="ml" data-tags="phishing url detection deeplearning ensemble concept drift security">
+      <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="ml" data-tags="phishing url detection deeplearning ensemble concept drift security">
         <div class="flex items-start justify-between mb-4">
-          <iconify-icon icon="lucide:shield-alert" width="30" class="text-orange-500" stroke-width="1"></iconify-icon>
-          <a href="https://github.com/Raka7317/urlguard" target="_blank" class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
+          <iconify-icon icon="lucide:shield-alert" width="36" class="text-orange-500" stroke-width="1"></iconify-icon>
+          <a href="https://github.com/Raka7317/urlguard" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
             <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
           </a>
         </div>
-        <h3 class="text-lg font-medium text-neutral-900 dark:text-white mb-2">Hybrid Phishing URL Detection</h3>
-        <p class="text-sm text-neutral-500 leading-relaxed mb-4">Stacked an SGD Classifier, DeepTCN + Attention (AUC: 0.9932), and Isolation Forest via a Random Forest meta-learner — 96%+ accuracy/recall on 555K+ URLs. Built an 80,008-dim sparse feature pipeline (TF-IDF char n-grams + lexical features) with CSR compression, cutting memory from 32GB to 200MB. Real-time concept drift monitoring (Page-Hinkley, ADWIN, DDM) with active learning for human-in-the-loop retraining.</p>
+        <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">Hybrid Phishing URL Detection</h3>
+        <p class="text-base text-neutral-500 leading-relaxed mb-5">Stacked an SGD Classifier, DeepTCN + Attention (AUC: 0.9932), and Isolation Forest via a Random Forest meta-learner — 96%+ accuracy/recall on 555K+ URLs. Built an 80,008-dim sparse feature pipeline (TF-IDF char n-grams + lexical features) with CSR compression, cutting memory from 32GB to 200MB. Real-time concept drift monitoring (Page-Hinkley, ADWIN, DDM) with active learning for human-in-the-loop retraining.</p>
         <div class="flex flex-wrap gap-2">
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">PyTorch</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">DeepTCN</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">Isolation Forest</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">Concept Drift</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">PyTorch</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">DeepTCN</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Isolation Forest</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Concept Drift</span>
         </div>
       </div>
 
-      <div class="proj-card group glass-card rounded-3xl p-8 cursor-default" data-cat="ml" data-tags="guardrails safety pipeline prompt injection toxicity pii">
+      <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="ml" data-tags="guardrails safety pipeline prompt injection toxicity pii">
         <div class="flex items-start justify-between mb-4">
-          <iconify-icon icon="lucide:shield-check" width="30" class="text-purple-500" stroke-width="1"></iconify-icon>
-          <a href="https://github.com/Raka7317/guardrails-engine" target="_blank" class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
+          <iconify-icon icon="lucide:shield-check" width="36" class="text-purple-500" stroke-width="1"></iconify-icon>
+          <a href="https://github.com/Raka7317/guardrails-engine" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
             <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
           </a>
         </div>
-        <h3 class="text-lg font-medium text-neutral-900 dark:text-white mb-2">LLM Guardrails: Multi-Layer AI Safety Pipeline</h3>
-        <p class="text-sm text-neutral-500 leading-relaxed mb-4">Async, cost-tiered guardrail pipeline (validation → PII → ML models → LLM) inspecting prompts pre-inference with DeBERTa-v3 for prompt injection detection, Detoxify for multi-label toxicity classification, and Presidio + spaCy for PII detection, with a standardized result schema and short-circuit logic. Asyncio-threaded transformer inference under concurrent load; extensible for post-generation checks and a planned LLM-as-judge hallucination layer.</p>
+        <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">LLM Guardrails: Multi-Layer AI Safety Pipeline</h3>
+        <p class="text-base text-neutral-500 leading-relaxed mb-5">Async, cost-tiered guardrail pipeline (validation → PII → ML models → LLM) inspecting prompts pre-inference with DeBERTa-v3 for prompt injection detection, Detoxify for multi-label toxicity classification, and Presidio + spaCy for PII detection, with a standardized result schema and short-circuit logic. Asyncio-threaded transformer inference under concurrent load; extensible for post-generation checks and a planned LLM-as-judge hallucination layer.</p>
         <div class="flex flex-wrap gap-2">
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">FastAPI</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">DeBERTa-v3</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">Detoxify</span>
-          <span class="text-[10px] uppercase tracking-wider border border-black/5 dark:border-white/10 px-2 py-1 rounded text-neutral-500">AsyncIO</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">FastAPI</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">DeBERTa-v3</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Detoxify</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AsyncIO</span>
         </div>
       </div>
 
@@ -416,55 +417,55 @@ body {
   </section>
 
   <!-- EXPERIENCE / EDUCATION -->
-  <section id="experience" class="section-anchor py-24">
+  <section id="experience" class="section-anchor py-32">
     <div class="mb-12 reveal">
-      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Experience &amp; Education</h2>
-      <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2">Where I've worked, learned, and given back.</p>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">Experience &amp; Education</h2>
+      <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-3">Where I've worked, learned, and given back.</p>
     </div>
 
     <div class="reveal">
-      <h3 class="text-xs font-mono text-neutral-500 mb-6 border-b border-neutral-200 dark:border-white/10 pb-2 uppercase tracking-widest">Experience Log</h3>
-      <div class="font-mono text-xs space-y-8 relative border-l border-dashed border-neutral-300 dark:border-white/10 ml-2">
+      <h3 class="text-sm font-mono text-neutral-500 mb-8 border-b border-neutral-200 dark:border-white/10 pb-3 uppercase tracking-widest">Experience Log</h3>
+      <div class="font-mono text-sm space-y-10 relative border-l border-dashed border-neutral-300 dark:border-white/10 ml-2">
         <div class="pl-8 relative">
           <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-indigo-500 rounded-full ring-4 ring-[#FAFAFA] dark:ring-dark"></div>
           <div class="text-neutral-400 mb-1">Jul 2025 — Present</div>
-          <div class="text-base text-neutral-900 dark:text-white font-semibold">M.Tech, AI &amp; ML</div>
+          <div class="text-xl text-neutral-900 dark:text-white font-semibold">M.Tech, AI &amp; ML</div>
           <div class="text-indigo-600 dark:text-indigo-400 mb-2">Vellore Institute of Technology (VIT), Vellore</div>
-          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans">GPA 8.38 / 10 — specializing in advanced machine learning, deep learning, and AI applications.</p>
+          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans text-sm mt-1">GPA 8.38 / 10 — specializing in advanced machine learning, deep learning, and AI applications.</p>
         </div>
         <div class="pl-8 relative">
           <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-neutral-400 dark:bg-neutral-600 rounded-full ring-4 ring-[#FAFAFA] dark:ring-dark"></div>
           <div class="text-neutral-400 mb-1">Jul 2023 — Oct 2023</div>
-          <div class="text-base text-neutral-900 dark:text-white font-semibold">Full Stack Web Developer Intern</div>
+          <div class="text-xl text-neutral-900 dark:text-white font-semibold">Full Stack Web Developer Intern</div>
           <div class="text-indigo-600 dark:text-indigo-400 mb-2">Johnnette AI</div>
-          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans">Built full-stack apps with React.js, Node.js &amp; Express.js. Implemented RESTful APIs with JWT auth and role-based access control. Created reusable React component libraries improving UI consistency across product modules, and developed secure session management systems.</p>
+          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans text-sm mt-1">Built full-stack apps with React.js, Node.js &amp; Express.js. Implemented RESTful APIs with JWT auth and role-based access control. Created reusable React component libraries improving UI consistency across product modules, and developed secure session management systems.</p>
         </div>
         <div class="pl-8 relative">
           <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-neutral-400 dark:bg-neutral-600 rounded-full ring-4 ring-[#FAFAFA] dark:ring-dark"></div>
           <div class="text-neutral-400 mb-1">Nov 2020 — Jul 2024</div>
-          <div class="text-base text-neutral-900 dark:text-white font-semibold">B.Tech, CS &amp; IT</div>
+          <div class="text-xl text-neutral-900 dark:text-white font-semibold">B.Tech, CS &amp; IT</div>
           <div class="text-indigo-600 dark:text-indigo-400 mb-2">KIET Group of Institutions, Ghaziabad</div>
-          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans">CGPA 7.3 / 10 — foundation in computer science fundamentals, data structures, algorithms, and software engineering.</p>
+          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans text-sm mt-1">CGPA 7.3 / 10 — foundation in computer science fundamentals, data structures, algorithms, and software engineering.</p>
         </div>
         <div class="pl-8 relative">
           <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-neutral-400 dark:bg-neutral-600 rounded-full ring-4 ring-[#FAFAFA] dark:ring-dark"></div>
           <div class="text-neutral-400 mb-1">Ongoing</div>
-          <div class="text-base text-neutral-900 dark:text-white font-semibold">DSA Coordinator &amp; Uddesya Club Member</div>
+          <div class="text-xl text-neutral-900 dark:text-white font-semibold">DSA Coordinator &amp; Uddesya Club Member</div>
           <div class="text-indigo-600 dark:text-indigo-400 mb-2">Leadership &amp; Community</div>
-          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans">Designed and facilitated group DSA workshops for junior students, improving their problem-solving approach and CP ratings. Coordinated community outreach for 50–200 beneficiaries across food distribution, blood donation, and educational programs.</p>
+          <p class="text-neutral-500 max-w-lg leading-relaxed font-sans text-sm mt-1">Designed and facilitated group DSA workshops for junior students, improving their problem-solving approach and CP ratings. Coordinated community outreach for 50–200 beneficiaries across food distribution, blood donation, and educational programs.</p>
         </div>
       </div>
     </div>
 
     <div class="mt-16 reveal">
-      <h3 class="text-xs font-mono text-neutral-500 mb-6 border-b border-neutral-200 dark:border-white/10 pb-2 uppercase tracking-widest">Certifications</h3>
+      <h3 class="text-sm font-mono text-neutral-500 mb-8 border-b border-neutral-200 dark:border-white/10 pb-3 uppercase tracking-widest">Certifications</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="glass-card rounded-2xl p-6">
-          <div class="text-sm font-medium text-neutral-900 dark:text-white">Full Stack Web Development</div>
+        <div class="glass-card rounded-2xl p-8">
+          <div class="text-lg font-medium text-neutral-900 dark:text-white">Full Stack Web Development</div>
           <div class="text-xs text-neutral-500 mt-1">100xDevs</div>
         </div>
-        <div class="glass-card rounded-2xl p-6">
-          <div class="text-sm font-medium text-neutral-900 dark:text-white">Data Science with Python</div>
+        <div class="glass-card rounded-2xl p-8">
+          <div class="text-lg font-medium text-neutral-900 dark:text-white">Data Science with Python</div>
           <div class="text-xs text-neutral-500 mt-1">Udemy</div>
         </div>
       </div>
@@ -472,57 +473,57 @@ body {
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section-anchor py-24">
+  <section id="contact" class="section-anchor py-32">
     <div class="mb-12 reveal">
-      <h2 class="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Have a project in mind?</h2>
-      <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 max-w-md">Building systems for scale. Models built for production. Let's talk.</p>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">Have a project in mind?</h2>
+      <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-3 max-w-lg">Building systems for scale. Models built for production. Let's talk.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-5 gap-10 reveal">
-      <form id="cform" class="md:col-span-3 glass-card rounded-3xl p-8 space-y-4" onsubmit="submitForm(event)">
+      <form id="cform" class="md:col-span-3 glass-card rounded-3xl p-10 space-y-5" onsubmit="submitForm(event)">
         <div id="fmsg" class="hidden px-4 py-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-300 text-xs font-medium">Thanks for reaching out! I'll get back to you soon.</div>
         <div>
-          <label class="text-[10px] uppercase tracking-widest text-neutral-500 mb-2 block">Name</label>
-          <input type="text" required placeholder="Your name" class="w-full px-4 py-3 text-sm rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/5 dark:border-white/10 outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500">
+          <label class="text-xs uppercase tracking-widest text-neutral-500 mb-2.5 block">Name</label>
+          <input type="text" required placeholder="Your name" class="w-full px-5 py-4 text-base rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/5 dark:border-white/10 outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500">
         </div>
         <div>
-          <label class="text-[10px] uppercase tracking-widest text-neutral-500 mb-2 block">Email</label>
-          <input type="email" required placeholder="you@example.com" class="w-full px-4 py-3 text-sm rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/5 dark:border-white/10 outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500">
+          <label class="text-xs uppercase tracking-widest text-neutral-500 mb-2.5 block">Email</label>
+          <input type="email" required placeholder="you@example.com" class="w-full px-5 py-4 text-base rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/5 dark:border-white/10 outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500">
         </div>
         <div>
-          <label class="text-[10px] uppercase tracking-widest text-neutral-500 mb-2 block">Message</label>
-          <textarea required placeholder="Tell me about your project..." rows="4" class="w-full px-4 py-3 text-sm rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/5 dark:border-white/10 outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500 resize-none"></textarea>
+          <label class="text-xs uppercase tracking-widest text-neutral-500 mb-2.5 block">Message</label>
+          <textarea required placeholder="Tell me about your project..." rows="4" class="w-full px-5 py-4 text-base rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/5 dark:border-white/10 outline-none focus:ring-1 focus:ring-indigo-500/40 text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500 resize-none"></textarea>
         </div>
-        <button type="submit" class="w-full py-3 bg-neutral-900 dark:bg-[#EDEDED] text-white dark:text-black text-xs font-semibold rounded-full hover:scale-[1.02] transition-transform">Send Message</button>
+        <button type="submit" class="w-full py-4 bg-neutral-900 dark:bg-[#EDEDED] text-white dark:text-black text-sm font-semibold rounded-full hover:scale-[1.02] transition-transform">Send Message</button>
       </form>
 
       <div class="md:col-span-2 space-y-3">
-        <a href="mailto:rakeshofficial7317@gmail.com" class="glass-card rounded-2xl p-5 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
-          <iconify-icon icon="lucide:mail" width="18" class="text-indigo-500"></iconify-icon>
+        <a href="mailto:rakeshofficial7317@gmail.com" class="glass-card rounded-2xl p-7 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
+          <iconify-icon icon="lucide:mail" width="22" class="text-indigo-500"></iconify-icon>
           <div>
-            <div class="text-[10px] uppercase tracking-widest text-neutral-500">Email</div>
-            <div class="text-sm text-neutral-800 dark:text-neutral-200">rakeshofficial7317@gmail.com</div>
+            <div class="text-xs uppercase tracking-widest text-neutral-500">Email</div>
+            <div class="text-base text-neutral-800 dark:text-neutral-200">rakeshofficial7317@gmail.com</div>
           </div>
         </a>
-        <a href="tel:+917355066278" class="glass-card rounded-2xl p-5 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
-          <iconify-icon icon="lucide:phone" width="18" class="text-indigo-500"></iconify-icon>
+        <a href="tel:+917355066278" class="glass-card rounded-2xl p-7 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
+          <iconify-icon icon="lucide:phone" width="22" class="text-indigo-500"></iconify-icon>
           <div>
-            <div class="text-[10px] uppercase tracking-widest text-neutral-500">Phone</div>
-            <div class="text-sm text-neutral-800 dark:text-neutral-200">+91 7355066278</div>
+            <div class="text-xs uppercase tracking-widest text-neutral-500">Phone</div>
+            <div class="text-base text-neutral-800 dark:text-neutral-200">+91 7355066278</div>
           </div>
         </a>
-        <a href="https://linkedin.com/in/rakesh-kumar73/" target="_blank" class="glass-card rounded-2xl p-5 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
-          <iconify-icon icon="lucide:linkedin" width="18" class="text-indigo-500"></iconify-icon>
+        <a href="https://linkedin.com/in/rakesh-kumar73/" target="_blank" class="glass-card rounded-2xl p-7 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
+          <iconify-icon icon="lucide:linkedin" width="22" class="text-indigo-500"></iconify-icon>
           <div>
-            <div class="text-[10px] uppercase tracking-widest text-neutral-500">LinkedIn</div>
-            <div class="text-sm text-neutral-800 dark:text-neutral-200">rakesh-kumar73</div>
+            <div class="text-xs uppercase tracking-widest text-neutral-500">LinkedIn</div>
+            <div class="text-base text-neutral-800 dark:text-neutral-200">rakesh-kumar73</div>
           </div>
         </a>
-        <a href="https://github.com/Raka7317" target="_blank" class="glass-card rounded-2xl p-5 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
-          <iconify-icon icon="lucide:github" width="18" class="text-indigo-500"></iconify-icon>
+        <a href="https://github.com/Raka7317" target="_blank" class="glass-card rounded-2xl p-7 flex items-center gap-4 hover:border-indigo-500/30 transition-colors">
+          <iconify-icon icon="lucide:github" width="22" class="text-indigo-500"></iconify-icon>
           <div>
-            <div class="text-[10px] uppercase tracking-widest text-neutral-500">GitHub</div>
-            <div class="text-sm text-neutral-800 dark:text-neutral-200">Raka7317</div>
+            <div class="text-xs uppercase tracking-widest text-neutral-500">GitHub</div>
+            <div class="text-base text-neutral-800 dark:text-neutral-200">Raka7317</div>
           </div>
         </a>
       </div>
@@ -532,12 +533,12 @@ body {
 </main>
 
 <footer class="relative z-10 border-t border-black/5 dark:border-white/5 mt-10">
-  <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4">
-    <div class="text-xs text-neutral-400 font-mono">© 2026 Rakesh Kumar. Designed &amp; built by Rakesh Kumar.</div>
+  <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="text-sm text-neutral-400 font-mono">© 2026 Rakesh Kumar. Designed &amp; built by Rakesh Kumar.</div>
     <div class="flex gap-6">
-      <a href="https://github.com/Raka7317" target="_blank" class="text-neutral-400 hover:text-black dark:hover:text-white transition-colors"><iconify-icon icon="lucide:github" width="16"></iconify-icon></a>
-      <a href="https://linkedin.com/in/rakesh-kumar73/" target="_blank" class="text-neutral-400 hover:text-black dark:hover:text-white transition-colors"><iconify-icon icon="lucide:linkedin" width="16"></iconify-icon></a>
-      <a href="mailto:rakeshofficial7317@gmail.com" class="text-neutral-400 hover:text-black dark:hover:text-white transition-colors"><iconify-icon icon="lucide:mail" width="16"></iconify-icon></a>
+      <a href="https://github.com/Raka7317" target="_blank" class="text-neutral-400 hover:text-black dark:hover:text-white transition-colors"><iconify-icon icon="lucide:github" width="18"></iconify-icon></a>
+      <a href="https://linkedin.com/in/rakesh-kumar73/" target="_blank" class="text-neutral-400 hover:text-black dark:hover:text-white transition-colors"><iconify-icon icon="lucide:linkedin" width="18"></iconify-icon></a>
+      <a href="mailto:rakeshofficial7317@gmail.com" class="text-neutral-400 hover:text-black dark:hover:text-white transition-colors"><iconify-icon icon="lucide:mail" width="18"></iconify-icon></a>
     </div>
   </div>
 </footer>
