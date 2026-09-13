@@ -429,21 +429,21 @@ body {
       </div>
 
       <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="cloud" data-tags="distributed fargate ecs kafka clickhouse prisma deployment platform">
-        <div class="flex items-start justify-between mb-4">
-          <iconify-icon icon="lucide:cloud-cog" width="36" class="text-emerald-500" stroke-width="1"></iconify-icon>
-          <a href="https://github.com/Raka7317/Vercel_Part_1" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
-            <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
-          </a>
-        </div>
-        <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">Distributed Cloud Deployment Platform</h3>
-        <p class="text-base text-neutral-500 leading-relaxed mb-5">V1: scalable Git-to-deployment platform with isolated Docker builds on AWS ECS and S3 storage, using a custom streaming reverse proxy to serve deployments without memory overhead. V2: added PostgreSQL/Prisma for deployment data, migrated logging from Redis to a Kafka + ClickHouse pipeline for persistent, real-time build log ingestion.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AWS ECS Fargate</span>
-          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Kafka</span>
-          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">ClickHouse</span>
-          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Next.js</span>
-        </div>
-      </div>
+  <div class="flex items-start justify-between mb-4">
+    <iconify-icon icon="lucide:cloud-cog" width="36" class="text-emerald-500" stroke-width="1"></iconify-icon>
+    <a href="https://github.com/Raka7317/Vercel_Part_1" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
+      <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
+    </a>
+  </div>
+  <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">Distributed Cloud Deployment Platform</h3>
+  <img src="assets/projects/distributed-deployment-platform.png" alt="Distributed Cloud Deployment Platform architecture diagram" class="w-full rounded-2xl mb-5 object-cover" />
+  <div class="flex flex-wrap gap-2">
+    <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AWS ECS Fargate</span>
+    <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Kafka</span>
+    <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">ClickHouse</span>
+    <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Next.js</span>
+  </div>
+</div>
 
       <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="ml" data-tags="phishing url detection deeplearning ensemble concept drift security">
         <div class="flex items-start justify-between mb-4">
@@ -478,7 +478,7 @@ body {
           <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AsyncIO</span>
         </div>
       </div>
-      <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="ml" data-tags="rag agentic-ai langgraph self-rag incident-response llmops">
+     <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="ml" data-tags="rag agentic-ai langgraph self-rag incident-response llmops">
   <div class="flex items-start justify-between mb-4">
     <iconify-icon icon="lucide:workflow" width="36" class="text-purple-500" stroke-width="1"></iconify-icon>
     <a href="https://github.com/Raka7317/CloudOps-Sentinel-Copilot" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
@@ -486,7 +486,7 @@ body {
     </a>
   </div>
   <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">CloudOps Sentinel: Self-RAG Incident Response Copilot</h3>
-  <p class="text-base text-neutral-500 leading-relaxed mb-5">LangGraph-orchestrated Self-RAG system for cloud incident response that retrieves from a private Pinecone runbook/SOP knowledge base, self-grades retrieved evidence, rewrites weak queries, and falls back to live Tavily web search only when internal evidence is insufficient. Generation is checked with IsSUP/IsUSE self-reflection loops before an answer is returned. SQLite-backed LangGraph checkpointing gives each incident session persistent memory, so follow-up questions are contextualized against prior turns via a stable thread_id. FastAPI backend with a live document-upload pipeline (PDF/TXT/MD/DOCX) that feeds the same embedding path as the offline ingestion script, keeping runtime retrieval and knowledge-base builds in sync.</p>
+  <img src="assets/projects/cloudops-sentinel-copilot.png" alt="CloudOps Sentinel Self-RAG architecture diagram" class="w-full rounded-2xl mb-5 object-cover" />
   <div class="flex flex-wrap gap-2">
     <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">LangGraph</span>
     <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Pinecone</span>
