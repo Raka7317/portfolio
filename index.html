@@ -478,6 +478,22 @@ body {
           <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AsyncIO</span>
         </div>
       </div>
+       <div class="proj-card group glass-card rounded-3xl p-10 cursor-default" data-cat="ml" data-tags="guardrails safety pipeline prompt injection toxicity pii">
+        <div class="flex items-start justify-between mb-4">
+          <iconify-icon icon="lucide:shield-check" width="36" class="text-purple-500" stroke-width="1"></iconify-icon>
+          <a href="https://github.com/Raka7317/guardrails-engine" target="_blank" class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-indigo-500 group-hover:border-indigo-500 group-hover:text-white transition-all">
+            <iconify-icon icon="lucide:arrow-up-right" width="16"></iconify-icon>
+          </a>
+        </div>
+        <h3 class="text-2xl font-medium text-neutral-900 dark:text-white mb-3">LLM Guardrails: Multi-Layer AI Safety Pipeline</h3>
+        <p class="text-base text-neutral-500 leading-relaxed mb-5">Async, cost-tiered guardrail pipeline (validation → PII → ML models → LLM) inspecting prompts pre-inference with DeBERTa-v3 for prompt injection detection, Detoxify for multi-label toxicity classification, and Presidio + spaCy for PII detection, with a standardized result schema and short-circuit logic. Asyncio-threaded transformer inference under concurrent load; extensible for post-generation checks and a planned LLM-as-judge hallucination layer.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">FastAPI</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">DeBERTa-v3</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">Detoxify</span>
+          <span class="text-xs uppercase tracking-wider border border-black/5 dark:border-white/10 px-3 py-1.5 rounded-full text-neutral-500">AsyncIO</span>
+        </div>
+      </div>
 
     </div>
     <div id="nores" class="hidden text-center py-16 text-sm text-neutral-500">No matching projects.</div>
